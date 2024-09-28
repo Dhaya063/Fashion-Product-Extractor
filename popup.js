@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to extract product information
 function extractProductInfo() {
     // Select product name
-    const name = document.querySelector('.product-detail-info__header-name')?.innerText || 'N/A'; 
+    const name = document.querySelector('.product-detail-info__header-name,.ProductName-module--container__3Qbt1')?.innerText || 'N/A'; 
     // Select product price
-    const price = document.querySelector('.money-amount.price-formatted__price-amount .money-amount__main')?.innerText || 'N/A'; 
+    const price = document.querySelector('.money-amount.price-formatted__price-amount .money-amount__main,.e26896')?.innerText || 'N/A'; 
     // Select product image URL
-    const image = document.querySelector('.media-image__image')?.src || ''; 
+    const image = document.querySelector('.media-image__image,.product-detail-thumbnail-image')?.src || ''; 
 
     return { name, price, image };
 }

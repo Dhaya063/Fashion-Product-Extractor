@@ -1,13 +1,13 @@
 // Function to extract product details
 const extractProductDetails = () => {
     // Select product name
-    const productName = document.querySelector('.product-name h1')?.innerText || '';
+    const productName = document.querySelector('.product-name h1')?.innerText || 'N/A';
 
     // Select product price
-    const productPrice = document.querySelector('.money-amount.price-formatted__price-amount .money-amount__main')?.innerText || '';
+    const productPrice = document.querySelector('.money-amount.price-formatted__price-amount .money-amount__main')?.innerText || 'N/A';
 
-    // Select product image URL
-    const productImage = document.querySelector('.media-image__image')?.src || '';
+    // Select product image URL (get the 6th image)
+    const productImage = document.querySelectorAll('.media-image__image,.product-detail-thumbnail-image')[5]?.src || 'N/A';
 
     // Save extracted data to Chrome local storage
     chrome.storage.local.set({

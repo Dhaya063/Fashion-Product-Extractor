@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fashion Product Extractor",
-  "version": "1.0",
+  "version": "1.1",
   "permissions": [
       "activeTab",
       "scripting",
@@ -12,7 +12,7 @@
       "default_icon": {
           "16": "images/icon-16.png",
           "48": "images/icon-16.png",
-           "128": "images/icon-16.png"
+          "128": "images/icon-16.png"
       }
   },
   "icons": {
@@ -22,7 +22,7 @@
   },
   "content_scripts": [
       {
-          "matches": ["https://www.zara.com/*"],
+          "matches": ["https://www.zara.com/*", "https://www2.hm.com/*"],
           "js": ["content.js"]
       }
   ]
