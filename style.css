@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 250px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center; /* Centered heading */
+}
+
+img {
+    max-width: 50%; /* Allowing full width for better responsiveness */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+    border-radius: 5px; /* Slight rounding of corners */
+}
+
+#product-name {
+    margin: 15px 0;
+    font-size: 20px; /* Increased font size */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #343434; /* Softer shade for product name */
+}
+
+#product-info {
+    text-align: center;
+}
+
+/* 
+#product-price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #333; 
+} */
+
+#product-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000; /* Vibrant color for price */
+    margin-top: 20px;
+    padding: 5px;
+}
